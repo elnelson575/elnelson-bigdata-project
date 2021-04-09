@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Result</title>
+  </head>
+  <body>
+
+  <div class="panel-group">
+      <div class="panel panel-default">
+          <div class="panel-heading">&nbsp;Average Visitors by Day for the Selected Census Tract&nbsp;</div>
+          <div class="panel-body">
+              <table class="table table-striped" style="width:60%;margin:auto;">
+              <tr>
+                  <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+              </tr>
+              <tr><td>{{avg_mon}}</td><td>{{avg_tues}}</td><td>{{avg_wed}}</td><td>{{avg_thurs}}</td>
+                  <td>{{avg_fri}}</td><td>{{avg_sat}}</td><td>{{avg_sun}}</td></tr>
+
+          </table></div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">&nbsp;Mask Wearing Probability&nbsp;</div>
+          <div class="panel-body">
+              <table class="table table-striped" style="width:60%;margin:auto;">
+                  <tr>
+                      <th>Always</th><th>Frequently</th><th>Sometimes</th><th>Rarely</th><th>Never</th>
+                  </tr>
+                  <tr><td>{{always}}</td><td>{{frequently}}</td><td>{{sometimes}}</td><td>{{rarely}}</td>
+                      <td>{{never}}</td></tr>
+
+              </table></div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">&nbsp;Case Rate&nbsp;</div>
+          <div class="panel-body">
+              <p> There have been {{casedt}} in this county from the start of the pandemic to the first of this month.</p>
+          </div>
+      </div>
+  </div>
+
+</body></html>
